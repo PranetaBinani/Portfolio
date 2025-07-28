@@ -3,6 +3,8 @@ import technoLogo from './assets/techno.png'; // adjust path if needed
 import samarthLogo from './assets/samarth.png';
 import dino from './assets/dino.png';
 import samvidhanopedia from './assets/samvidhanopedia.png';
+import myimg from './assets/myimg.png';
+import lofi from './assets/lofi-studygirl.png';
 import hospital from './assets/hospital.png';
 import { Github, Linkedin, Mail, Phone, FileText, Send, Menu, X, ChevronsRight, MapPin, Instagram, Mouse } from 'lucide-react';
 const ExternalLinkIcon = ({ size = 24, color = 'currentColor', className = '' }) => (
@@ -218,7 +220,7 @@ const HeroSection = ({ onScrollClick }) => {
                 <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full">
                       <div className="md:w-2/5 flex justify-center">
                         <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-pink-500/50 to-purple-600/50 p-1 shadow-2xl backdrop-blur-sm">
-                           <img src="src\assets\myimg.jpeg" alt="Praneta Binani" className="w-full h-full rounded-full object-cover" />
+                           <img src={myimg} alt="Praneta Binani" className="w-full h-full rounded-full object-cover" />
                         </div>
                     </div>
                     <div className="md:w-3/5 text-center md:text-left mt-10 md:mt-0">
@@ -260,7 +262,7 @@ const AboutSection = () => {
       <div className="flex flex-col md:flex-row items-center justify-center gap-16">
         <div className="md:w-1/3 relative">
           <div className="w-full h-auto animate-float">
-            <img src="src\assets\lofi-studygirl.png" alt="Lofi Study Girl" className="rounded-2xl shadow-2xl shadow-pink-900/40" />
+            <img src={lofi} alt="Lofi Study Girl" className="rounded-2xl shadow-2xl shadow-pink-900/40" />
           </div>
         </div>
         <div className="md:w-1/2 text-2xl text-gray-300 space-y-6 animate-fade-in">
