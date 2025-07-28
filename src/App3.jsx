@@ -3,7 +3,7 @@ import technoLogo from './assets/techno.png'; // adjust path if needed
 import samarthLogo from './assets/samarth.png';
 import dino from './assets/dino.png';
 import samvidhanopedia from './assets/samvidhanopedia.png';
-import myimg from './assets/myimg.png';
+import myimg from './assets/myimg.jpeg';
 import lofi from './assets/lofi-studygirl.png';
 import hospital from './assets/hospital.png';
 import { Github, Linkedin, Mail, Phone, FileText, Send, Menu, X, ChevronsRight, MapPin, Instagram, Mouse } from 'lucide-react';
