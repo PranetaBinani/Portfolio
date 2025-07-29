@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'; 
+import React, { useState, useEffect, useRef } from 'react';
 import technoLogo from './assets/techno.png'; // adjust path if needed
 import samarthLogo from './assets/samarth.png';
 import dino from './assets/dino.png';
@@ -26,7 +26,7 @@ const ExternalLinkIcon = ({ size = 24, color = 'currentColor', className = '' })
   </svg>
 );
 
- 
+
 
 //--- Custom Icons ---
  const WhatsAppIcon = ({ size = 24, color = 'currentColor', className = '' }) => (
@@ -124,12 +124,12 @@ export default function App() {
     <div className="bg-gradient-to-br from-[#1a0c2e] via-[#3a1d56] to-[#5e3a7d] text-gray-100 font-sans relative overflow-x-hidden animate-fade-in-main">
       <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#1a0c2e]/80 backdrop-blur-lg shadow-lg' : 'bg-transparent'}`}>
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="#home" onClick={() => scrollToSection('home')} className="text-3xl font-bold text-white tracking-wider">PranetaB</a>
+          <a href="#home" onClick={() => scrollToSection('home')} className="text-2xl md:text-3xl font-bold text-white tracking-wider">PranetaB</a>
           <nav className="hidden md:flex items-center space-x-8">
             {['home', 'about', 'skills', 'projects', 'contact'].map((item) => (
-              <a key={item} href={`#${item}`} onClick={() => scrollToSection(item)} className={`capitalize text-2xl font-medium transition-colors duration-300 ${activeSection === item ? 'text-pink-400' : 'text-gray-200 hover:text-pink-300'}`}>{item}</a>
+              <a key={item} href={`#${item}`} onClick={() => scrollToSection(item)} className={`capitalize text-lg md:text-2xl font-medium transition-colors duration-300 ${activeSection === item ? 'text-pink-400' : 'text-gray-200 hover:text-pink-300'}`}>{item}</a>
             ))}
-             <a href="https://drive.google.com/file/d/19lMvSXJnZAVN8VoA1OYqxSIqGVfMGfN6/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600 transition-colors duration-300 flex items-center space-x-2">
+             <a href="https://drive.google.com/file/d/19lMvSXJnZAVN8VoA1OYqxSIqGVfMGfN6/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600 transition-colors duration-300 flex items-center space-x-2 text-base md:text-lg">
                 <FileText size={18} />
                 <span>Resume</span>
             </a>
@@ -141,13 +141,13 @@ export default function App() {
           </div>
         </div>
       </header>
-      
+
       <nav className={`md:hidden fixed top-0 left-0 w-full h-full bg-[#1a0c2e]/95 backdrop-blur-md z-40 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} flex flex-col items-center justify-center`}>
         <div className="flex flex-col items-center space-y-8">
             {['home', 'about', 'skills', 'projects', 'contact'].map((item) => (
-              <a key={item} href={`#${item}`} onClick={() => scrollToSection(item)} className={`capitalize text-3xl font-medium transition-colors duration-300 ${activeSection === item ? 'text-pink-400' : 'text-gray-200 hover:text-pink-300'}`}>{item}</a>
+              <a key={item} href={`#${item}`} onClick={() => scrollToSection(item)} className={`capitalize text-2xl font-medium transition-colors duration-300 ${activeSection === item ? 'text-pink-400' : 'text-gray-200 hover:text-pink-300'}`}>{item}</a>
             ))}
-            <a href="https://drive.google.com/file/d/19lMvSXJnZAVN8VoA1OYqxSIqGVfMGfN6/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="mt-4 bg-pink-500 text-white px-6 py-3 rounded-full hover:bg-pink-600 transition-colors duration-300 flex items-center space-x-2">
+            <a href="https://drive.google.com/file/d/19lMvSXJnZAVN8VoA1OYqxSIqGVfMGfN6/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="mt-4 bg-pink-500 text-white px-6 py-3 rounded-full hover:bg-pink-600 transition-colors duration-300 flex items-center space-x-2 text-lg">
                 <FileText size={20} />
                 <span>Resume</span>
             </a>
@@ -209,7 +209,7 @@ const HeroSection = ({ onScrollClick }) => {
     return (
         <div className="min-h-screen relative overflow-hidden">
             {/* Background Image for Hero Section */}
-            <div 
+            <div
                 className="absolute inset-0 bg-cover bg-center z-0"
                 style={{ backgroundImage: "url('https://wallpapers.com/images/hd/pink-moon-2000-x-1000-oynqtqjj5u9xqgfg.jpg')" }}
             >
@@ -224,28 +224,28 @@ const HeroSection = ({ onScrollClick }) => {
                         </div>
                     </div>
                     <div className="md:w-3/5 text-center md:text-left mt-10 md:mt-0">
-                        <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
+                        <h1 className="text-4xl md:text-7xl font-bold text-white leading-tight">
                             Namaste World!
                         </h1>
-                        <h2 className="text-3xl md:text-5xl font-light text-gray-300 mt-4">
+                        <h2 className="text-2xl md:text-5xl font-light text-gray-300 mt-4">
                             I am Praneta Binani
                         </h2>
-                        <p className="text-2xl md:text-3xl text-white-400 mt-6 h-12">
+                        <p className="text-xl md:text-3xl text-white-400 mt-6 h-12">
                             a <span className="font-semibold border-b-4 border-pink-500">{displayedRole}</span><span className="animate-pulse">|</span>
                         </p>
-                        <p className="text-gray-400 mt-8 max-w-xl mx-auto md:mx-0">
+                        <p className="text-base md:text-lg text-gray-400 mt-8 max-w-xl mx-auto md:mx-0">
                             A passionate and creative developer with a knack for building beautiful, functional and secure web applications.
                         </p>
                         <div className="mt-12 flex justify-center md:justify-start space-x-6">
                             <a href="https://github.com/PranetaBinani" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-pink-400 transition-colors duration-300 transform hover:scale-110">
-                                <Github size={40} />
+                                <Github size={32} />
                             </a>
                             <a href="https://www.linkedin.com/in/praneta-binani-045b2a277/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-pink-400 transition-colors duration-300 transform hover:scale-110">
-                                <Linkedin size={40} />
+                                <Linkedin size={32} />
                             </a>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
              <ScrollDownIndicator onClick={onScrollClick} />
@@ -258,43 +258,31 @@ const HeroSection = ({ onScrollClick }) => {
 const AboutSection = () => {
   return (
     <div className="py-24 container mx-auto px-6">
-      <h2 className="text-4xl font-bold text-center mb-16 text-white">About Me</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">About Me</h2>
       <div className="flex flex-col md:flex-row items-center justify-center gap-16">
         <div className="md:w-1/3 relative">
           <div className="w-full h-auto animate-float">
             <img src={lofi} alt="Lofi Study Girl" className="rounded-2xl shadow-2xl shadow-pink-900/40" />
           </div>
         </div>
-        <div className="md:w-1/2 text-2xl text-gray-300 space-y-6 animate-fade-in">
-  <p>
-  I’m a <span className="font-semibold text-pink-400">B.Tech student</span> majoring in 
-  <span className="font-semibold text-pink-400">Computer Science with a Cyber Security focus</span>, driven by the passion to become a future 
-  <span className="font-semibold text-pink-400">SDE</span>.
-</p>
-
-<p>
-  I love <span className="font-semibold text-pink-400">building new things</span>whether it’s a game or a full-fledged web app
-  always with a touch of creativity and a strong eye for detail. My technical stack includes 
-  <span className="font-semibold text-pink-400">Java , Python , React and Node.js</span>.
-</p>
-
-<p>
-  Alongside coding, I thrive in <span className="font-semibold text-pink-400">team leadership</span>, <span className="font-semibold text-pink-400">research work</span>,
-  and exploring new technologies quickly and efficiently. From legal platforms to hospital systems, every project I build solves real-world problems.
-</p>
-
-<p>
-  Off-screen, I enjoy <span className="italic">music</span>, <span className="italic">reading books</span>, and reflecting on how tech can make life better. 
-  I’m here to learn, lead, and create with purpose.
-</p>
-
-
+        <div className="md:w-1/2 text-base md:text-xl text-gray-300 space-y-6 animate-fade-in">
+          <p>
+            I’m a <span className="font-semibold text-pink-400">B.Tech student</span> majoring in <span className="font-semibold text-pink-400">Computer Science with a Cyber Security focus</span>, driven by the passion to become a future <span className="font-semibold text-pink-400">SDE</span>.
+          </p>
+          <p>
+            I love <span className="font-semibold text-pink-400">building new things</span>—whether it’s a game or a full-fledged web app—always with a touch of creativity and a strong eye for detail. My technical stack includes <span className="font-semibold text-pink-400">Java, Python, React and Node.js</span>.
+          </p>
+          <p>
+            Alongside coding, I thrive in <span className="font-semibold text-pink-400">team leadership</span>, <span className="font-semibold text-pink-400">research work</span>, and exploring new technologies quickly and efficiently. From legal platforms to hospital systems, every project I build solves real-world problems.
+          </p>
+          <p>
+            Off-screen, I enjoy <span className="italic">music</span>, <span className="italic">reading books</span>, and reflecting on how tech can make life better. I’m here to learn, lead, and create with purpose.
+          </p>
         </div>
       </div>
     </div>
   );
 };
-
 // --- TagCloud Component ---
 // const CircularSkillCloud = () => {
 //     const skills = [
@@ -314,7 +302,7 @@ const AboutSection = () => {
 //         { name: 'Postman', icon: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg' },
 //         { name: 'TailwindCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' }
 //     ];
-    
+//
 //     const [radius, setRadius] = useState(140);
 
 //     useEffect(() => {
@@ -388,7 +376,7 @@ const SkillSphere = () => {
             const theta = phi * i;
             const x = Math.cos(theta) * radiusAtY;
             const z = Math.sin(theta) * radiusAtY;
-            
+
             const texture = textureLoader.load(skills[i]);
             const material = new window.THREE.SpriteMaterial({ map: texture, transparent: true, opacity: 0.9 });
             const sprite = new window.THREE.Sprite(material);
@@ -433,7 +421,7 @@ const SkillSphere = () => {
             renderer.render(scene, camera);
         };
         animate();
-        
+
         const handleResize = () => {
             camera.aspect = mount.clientWidth / mount.clientHeight;
             camera.updateProjectionMatrix();
@@ -473,14 +461,14 @@ const SkillsSection = () => {
         return () => clearInterval(timer);
     }, []);
 
-    const cardStyle = "bg-zinc-900/50 border border-pink-400 rounded-2xl p-8 backdrop-blur-sm flex flex-col";
+    const cardStyle = "bg-zinc-900/50 border border-pink-400 rounded-2xl p-6 md:p-8 backdrop-blur-sm flex flex-col";
 
     return (
         <div className="py-24 bg-black/20 backdrop-blur-md">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl font-bold mb-4 text-white">Focusing on the Best</h2>
-                    <p className="text-gray-400 max-w-3xl mx-auto text-xl">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Focusing on the Best</h2>
+                    <p className="text-base md:text-xl text-gray-400 max-w-3xl mx-auto">
                         As a rapid learner, I continuously expand my toolkit. Here are the core technologies I use to build robust, scalable, and detail-oriented applications.
                     </p>
                 </div>
@@ -488,32 +476,32 @@ const SkillsSection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-6 min-h-[40rem]">
                     <div className={`${cardStyle} lg:col-span-2 lg:row-span-2 justify-between`}>
                         <div>
-                            <h3 className="text-2xl font-semibold text-white mb-2">Multiple Tech Stack</h3>
-                            <p className="text-gray-400 text-2xl">I thrive on learning and working with multiple technologies and frameworks to build scalable and efficient applications.</p>
+                            <h3 className="text-xl md:text-2xl font-semibold text-white mb-2">Multiple Tech Stack</h3>
+                            <p className="text-base md:text-lg text-gray-400">I thrive on learning and working with multiple technologies and frameworks to build scalable and efficient applications.</p>
                         </div>
                         <div className="flex-grow flex items-center justify-center -mt-8"><SkillSphere /></div>
                     </div>
 
                     <div className={`${cardStyle} justify-center`}>
-                        <h3 className="text-2xl font-semibold text-white mb-4">Dev & Design</h3>
+                        <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">Dev & Design</h3>
                         <div className="flex items-center justify-around space-x-4 my-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-database text-fuchsia-400"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-database text-fuchsia-400"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
                             <div className="w-full h-px bg-neutral-600"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-server text-fuchsia-400"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-server text-fuchsia-400"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
                             <div className="w-full h-px bg-neutral-600"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-pen-tool text-fuchsia-400"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-pen-tool text-fuchsia-400"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
                         </div>
-                        <p className="text-gray-400 text-2xl mt-2 ">Excelling in development and design to create seamless, intuitive, and beautiful user experiences.</p>
+                        <p className="text-base md:text-lg text-gray-400 mt-2">Excelling in development and design to create seamless, intuitive, and beautiful user experiences.</p>
                     </div>
 
-                    <div className={`${cardStyle} justify-center items-center text-center `}>
-                        <h3 className="text-2xl font-semibold text-white mb-4">Open to Collaborations</h3>
-                        <div className="flex items-center space-x-3 text-xl text-white ">
-                           <MapPin size={22} className="text-fuchsia-400" />
+                    <div className={`${cardStyle} justify-center items-center text-center`}>
+                        <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">Open to Collaborations</h3>
+                        <div className="flex items-center space-x-3 text-base md:text-lg text-white">
+                           <MapPin size={20} className="text-fuchsia-400" />
                             <span>Kolkata, India</span>
                         </div>
-                        <div className="text-5xl font-mono my-3 text-gray-200 tracking-wider">{time || '...'}</div>
-                        <p className="text-gray-400 mt-2 max-w-xs text-xl">My passion for building and leading teams makes me a strong collaborator for your next big project.</p>
+                        <div className="text-4xl md:text-5xl font-mono my-3 text-gray-200 tracking-wider">{time || '...'}</div>
+                        <p className="text-base md:text-lg text-gray-400 mt-2 max-w-xs">My passion for building and leading teams makes me a strong collaborator for your next big project.</p>
                     </div>
                 </div>
             </div>
@@ -537,17 +525,17 @@ const ExperienceBanner = () => {
 
      return (
   <div className="py-4 bg-gradient-to-br from-violet-100 via-pink-200 to-violet-300 backdrop-blur-sm overflow-hidden">
-    <div className="relative w-full h-14 sm:h-12">
+    <div className="relative w-full h-12 sm:h-14">
       <div className="absolute top-0 left-0 bottom-0 flex animate-scroll">
         {[...logos, ...logos].map((item, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-32 h-full flex items-center justify-center mx-2 sm:mx-1"
+            className="flex-shrink-0 w-28 sm:w-32 h-full flex items-center justify-center mx-1 sm:mx-2"
           >
             <img
               src={item.logo}
               alt={item.name}
-              className="h-12 sm:h-10 w-auto object-contain transition-all duration-300 hover:grayscale"
+              className="h-10 sm:h-12 w-auto object-contain transition-all duration-300 hover:grayscale"
             />
           </div>
         ))}
@@ -579,7 +567,7 @@ const ProjectsSection = () => {
       live: 'https://samvidhanopedia.onrender.com/',
       details: 'This project features a structured custom legal database with over 200 Constitutional Articles and 150+ Acts in JSON. It integrates the OpenRouter API with tailored prompt engineering for AI-powered explanations and is fully deployed on Render.The Live link might take some time to load!'
     },
-   
+
     {
       title: 'Dino Game',
       description: 'A browser-based clone of the Chrome offline dinosaur runner game with an enhanced user interface.',
@@ -595,7 +583,7 @@ const ProjectsSection = () => {
 
   return (
     <div className="py-24 container mx-auto px-6">
-      <h2 className="text-4xl font-bold text-center mb-16 text-white">My Projects</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">My Projects</h2>
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
         {projects.map((project, index) => (
           <div
@@ -611,21 +599,19 @@ const ProjectsSection = () => {
               <div className="absolute inset-0 bg-black bg-opacity-40"></div>
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-2">{project.title}</h3>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tags.map(tag => (
                   <span
                     key={tag}
-                    className="bg-pink-900/50 text-pink-200 text-md px-2 py-1 rounded-full"
+                    className="bg-pink-900/50 text-pink-200 text-sm md:text-base px-2 py-1 rounded-full"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-              <p className="text-gray-400 mb-6">
-                {project.description.length > 50
-                  ? `${project.description.slice(0, 50)}...`
-                  : project.description}
+              <p className="text-base text-gray-400 mb-6">
+                {project.description}
               </p>
               <div className="flex justify-between items-center">
                 <div className="flex space-x-4">
@@ -650,7 +636,7 @@ const ProjectsSection = () => {
                 </div>
                 <button
                   onClick={() => setSelectedProject(project)}
-                  className="text-pink-400 hover:text-pink-300 font-semibold text-lg"
+                  className="text-pink-400 hover:text-pink-300 font-semibold text-base md:text-lg"
                 >
                   Read More
                 </button>
@@ -679,21 +665,21 @@ const ProjectModal = ({ project, onClose }) => {
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4 animate-fade-in" onClick={onClose}>
-            <div className="bg-gradient-to-br from-[#2a1444] to-[#1a0c2e] rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto p-8 relative" onClick={e => e.stopPropagation()}>
+            <div className="bg-gradient-to-br from-[#2a1444] to-[#1a0c2e] rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto p-6 md:p-8 relative" onClick={e => e.stopPropagation()}>
                 <button onClick={onClose} className="absolute top-4 right-4 text-gray-400 hover:text-white"><X size={28} /></button>
-                <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-lg mb-6" />
-                <h2 className="text-4xl font-bold text-white mb-2">{project.title}</h2>
-                <div className="flex flex-wrap gap-2 mb-4 text-xl">
+                <img src={project.image} alt={project.title} className="w-full h-48 md:h-64 object-cover rounded-lg mb-6" />
+                <h2 className="text-2xl md:text-4xl font-bold text-white mb-2">{project.title}</h2>
+                <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map(tag => <span key={tag} className="bg-pink-900/50 text-pink-200 text-xs px-2 py-1 rounded-full">{tag}</span>)}
                 </div>
-                <p className="text-gray-300 text-xl mb-6">{project.details}</p>
+                <p className="text-base md:text-lg text-gray-300 mb-6">{project.details}</p>
                 <div className="flex space-x-6">
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors text-sm md:text-base">
                         <Github size={20} />
                         <span>GitHub</span>
                     </a>
                     {project.live && (
-                        <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition-colors">
+                        <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition-colors text-sm md:text-base">
                             <ChevronsRight size={20} />
                             <span>Live Demo</span>
                         </a>
@@ -710,14 +696,14 @@ const ProjectModal = ({ project, onClose }) => {
   return (
     <div className="py-24 bg-black/20 backdrop-blur-sm">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-4 text-white">Get In Touch</h2>
-        <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Get In Touch</h2>
+        <p className="text-base md:text-lg text-gray-400 text-center mb-16 max-w-2xl mx-auto">
           I'm currently open to new opportunities. Feel free to send me a message!
         </p>
         <div className="flex flex-col md:flex-row gap-16 items-center">
           <div className="md:w-1/2">
-            <form 
-  action="https://formsubmit.co/e8da1588305b20a9b483bc51c006ddad" 
+            <form
+  action="https://formsubmit.co/e8da1588305b20a9b483bc51c006ddad"
   method="POST"
   className="space-y-6"
 >
@@ -727,25 +713,25 @@ const ProjectModal = ({ project, onClose }) => {
                 name="name"
                 placeholder="Your Name"
                 required
-                className="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-pink-500 text-base"
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Your Email"
                 required
-                className="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-pink-500 text-base"
               />
               <textarea
                 name="message"
                 placeholder="Your Message"
                 rows="5"
                 required
-                className="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-pink-500 text-base"
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-pink-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-pink-700 transition-colors duration-300 flex items-center justify-center space-x-2"
+                className="w-full bg-pink-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-pink-700 transition-colors duration-300 flex items-center justify-center space-x-2 text-base"
               >
                 <Send size={20} />
                 <span>Send Message</span>
@@ -754,7 +740,7 @@ const ProjectModal = ({ project, onClose }) => {
           </div>
 
           <div className="md:w-1/2 flex justify-center items-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80">
+            <div className="relative w-52 h-52 md:w-80 md:h-80">
               <img
                 src="https://static.vecteezy.com/system/resources/previews/023/405/215/original/3d-happy-earth-character-png.png"
                 alt="Floating Earth"
@@ -773,24 +759,24 @@ const Footer = () => {
     return (
         <footer className="bg-[#10061c] py-12 relative z-10">
             <div className="container mx-auto px-6 text-center text-gray-400">
-                <p className="text-2xl font-bold text-white mb-4">Praneta Binani</p>
-                <div className="flex justify-center space-x-6 mb-6">
-  <a href="https://github.com/PranetaBinani" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors"><Github size={28} /></a>
-  <a href="https://www.linkedin.com/in/praneta-binani-045b2a277/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors"><Linkedin size={28} /></a>
-  <a href="https://instagram.com/iampranetab?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors"><Instagram size={28} /></a>
-  <a href="https://wa.me/917595919071" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors"><WhatsAppIcon /></a>
+                <p className="text-xl md:text-2xl font-bold text-white mb-4">Praneta Binani</p>
+                <div className="flex justify-center space-x-4 md:space-x-6 mb-6">
+  <a href="https://github.com/PranetaBinani" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors"><Github size={24} /></a>
+  <a href="https://www.linkedin.com/in/praneta-binani-045b2a277/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors"><Linkedin size={24} /></a>
+  <a href="https://instagram.com/iampranetab?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors"><Instagram size={24} /></a>
+  <a href="https://wa.me/917595919071" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors"><WhatsAppIcon size={24}/></a>
   <a href="https://leetcode.com/u/PranetaB/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors">
     <img
       src="https://leetcode.com/static/images/LeetCode_logo.png"
       alt="LeetCode"
-      className="w-7 h-7 object-contain grayscale hover:grayscale-0 transition" // 28px like other icons
+      className="w-6 h-6 object-contain grayscale hover:grayscale-0 transition" // 24px like other icons
     />
   </a>
-  <a href="mailto:pranetabinani@gmail.com" className="hover:text-pink-400 transition-colors"><Mail size={28} /></a>
-  <a href="https://drive.google.com/drive/folders/1MI7MlflIjRJvNyGdcUX6BmYSXoMC7c_7?usp=drive_link" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors"><FileText size={28} /></a>
+  <a href="mailto:pranetabinani@gmail.com" className="hover:text-pink-400 transition-colors"><Mail size={24} /></a>
+  <a href="https://drive.google.com/drive/folders/1MI7MlflIjRJvNyGdcUX6BmYSXoMC7c_7?usp=drive_link" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors"><FileText size={24} /></a>
 </div>
 
-                <p>&copy; {new Date().getFullYear()} Praneta Binani. All rights reserved.</p>
+                <p className="text-sm">&copy; {new Date().getFullYear()} Praneta Binani. All rights reserved.</p>
             </div>
         </footer>
     );
@@ -915,7 +901,7 @@ style.innerHTML = `
             .animate-scroll-wheel {
                 animation: animate-scroll-wheel 2s infinite;
             }
-            
+
             @keyframes spin-slow {
                 from { transform: rotate(0deg); }
                 to { transform: rotate(360deg); }
@@ -957,4 +943,3 @@ style.innerHTML = `
 
 `;
 document.head.appendChild(style);
-
